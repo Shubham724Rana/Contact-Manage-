@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:id="@+id/linear_layout"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:layout_margin="6dp"
+        app:cardCornerRadius="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#000000"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:innerRadius="0dp"
+                app:cardCornerRadius="75dp"
+                android:shape="ring"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/imageId"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#000000"
+                    android:layout_marginEnd="178dp"
+                    android:src="@drawable/person"/>
+            </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="310dp"
+            android:background="#000000"
+            android:id="@+id/relative_layout"
+            android:layout_height="55dp">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:hint="Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:hint="Phone Number"
+                android:textColor="#FF5722"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/phone_number"
+                android:text="24/July/2000"
+                android:id="@+id/data"
+                android:textColor="#FF5722" />
+
+
+        </RelativeLayout>
+
+
+
+            <ImageView
+                android:id="@+id/edit_contact"
+                android:layout_width="22dp"
+                android:layout_height="55dp"
+                android:src = "@drawable/edit"
+                android:layout_marginRight="4dp"
+                android:background="#000000"
+                android:layout_alignParentEnd="true">
+
+            </ImageView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
